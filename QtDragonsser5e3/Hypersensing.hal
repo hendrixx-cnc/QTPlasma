@@ -1,0 +1,26 @@
+# --- Ohmic Sensing Tool Height Setter / Touch Probe ---
+
+loadrt ohmic names=ohmicsense
+addf ohmicsense servo-thread
+
+loadrt and2 count=3
+addf and2.0 servo-thread
+
+loadrt or2 count=2
+addf or2.0 servo-thread
+
+setp hm2_7i96.0.encoder.02.scale -1
+setp hm2_7i96.0.encoder.02.counter-mode 1
+
+# --- Configure Ohmicsensing ---
+ 
+
+setp ohmicsense.thcad-0-volt-freq    99800
+setp ohmicsense.thcad-max-volt-freq  901800
+setp ohmicsense.thcad-divide         32
+setp ohmicsense.thcad-fullscale      5
+setp ohmicsense.volt-divider         4.9
+setp ohmicsense.ohmic-threshold      15.0
+setp ohmicsense.ohmic-low            1
+net ohmic-vel ohmicsense.velocity-in <= hm2_7i96.0.encoder.02.velocity
+

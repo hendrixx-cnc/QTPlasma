@@ -1,0 +1,18 @@
+ 
+# --- VFD / Spindle ----
+
+loadusr -Wn vfd hy_vfd -n vfd -d /dev/ttyUSB0 -p none -r 9600
+
+
+setp vfd.enable 1 
+net spindle-speed <= spindle.0.speed-out => vfd.speed-command
+net spindle-cw <= spindle.0.forward => vfd.spindle-forward
+net spindle-ccw <= spindle.0.reverse => vfd.spindle-reverse
+net spindle-on spindle.0.on => vfd.spindle-on
+net spindle-speed-fb => vfd.spindle-speed-fb
+#net spindle-current <= qtdragon.spindle-amps => vfd.OutA
+net spindle-comm-ok => vfd.hycomm-ok
+net speed-display <= spindle.0.speed-in <= spindle.0.speed-out-rps
+net spindle-at-speed <= vfd.spindle-at-speed
+net spindle-at-speed <= spindle.0.at-speed
+#net volts <= qtdragon.spindle-volts <= vfd.ACV

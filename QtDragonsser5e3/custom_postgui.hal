@@ -1,0 +1,69 @@
+# Include your custom_postgui HAL commands here
+
+
+net spindle-current <= qtdragon.spindle-amps => vfd.OutA
+net volts <= qtdragon.spindle-volts <= vfd.ACV
+
+
+loadrt ohmic names=ohmicsense
+addf ohmicsense servo-thread
+
+loadrt and2 count=3
+addf and2.0 servo-thread
+
+loadrt or2 count=2
+addf or2.0 servo-thread
+
+setp hm2_7i96.0.encoder.02.scale -1
+setp hm2_7i96.0.encoder.02.counter-mode 1
+
+loadrt debounce cfg=1
+addf debounce.0 servo-thread
+setp debounce.0.delay 4
+
+# --- Configure Ohmicsensing ---
+ 
+setp ohmicsense.is-probing True
+setp ohmicsense.thcad-0-volt-freq    99800
+setp ohmicsense.thcad-max-volt-freq  901800
+setp ohmicsense.thcad-divide         32
+setp ohmicsense.thcad-fullscale      5
+setp ohmicsense.volt-divider         4.9
+setp ohmicsense.ohmic-threshold      15.0
+setp ohmicsense.ohmic-low            1
+net ohmic-vel ohmicsense.velocity-in <= hm2_7i96.0.encoder.02.velocity
+
+
+#----added M64 M65 command to M6 remap before and after each g38
+
+
+net M64 <= motion.digital-out-00 => and2.0.in0
+net tool-sensor <= ohmicsense.ohmic-on => and2.0.in1              
+net and-on <= and2.0.out  <= or2.0.in0
+net probe-sensor => hm2_7i96.0.gpio.006.in  <= or2.0.in1
+net probe-in <= motion.probe-input => qtdragon.led-probe <= or2.0.out
+
+loadrt xor2 count=1
+loadrt siggen num_chan=1
+addf and2.1 servo-thread
+addf and2.2 servo-thread
+addf xor2.0 servo-thread
+addf siggen.0.update servo-thread
+
+setp siggen.0.frequency 2
+
+#Yellow Light
+net yellow-in1 <= halui.machine.is-on => and2.1.in0
+net yellow-in2 <= halui.program.is-idle => and2.1.in1 
+net yellow-out <= and2.1.out
+net yellow-out => hm2_7i96.0.ssr.00.out-03
+
+#Green Light
+net green-in1 <= halui.program.is-running => xor2.0.in0
+net green-in2 <= halui.program.is-paused => and2.2.in1
+net flash <= siggen.0.clock => and2.2.in0
+net green-flash <= and2.2.out => xor2.0.in1
+net green-on <= xor2.0.out => hm2_7i96.0.ssr.00.out-04
+
+#Red Light
+net red-on <= halui.estop.is-activated  => hm2_7i96.0.ssr.00.out-02
