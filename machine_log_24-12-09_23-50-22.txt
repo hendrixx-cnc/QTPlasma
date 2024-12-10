@@ -1,0 +1,5 @@
+--- QtVCP Screen Started on: Mon, Dec 09 2024 10:55:44 PM ---
+--- QTPlasma - QtPlasmaC v2.10-008.053, powered by QtVCP and LinuxCNC ---
+22:55:45 Tool 0: torch
+22:55:51 GUI power on
+22:56:04 Machine homed
