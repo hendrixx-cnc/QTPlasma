@@ -1,0 +1,54 @@
+# Include your custom_postgui HAL commands here
+# This file will not be overwritten when you run PNCconf again
+loadrt ohmic names=ohmicsense
+addf ohmicsense servo-thread
+
+# --- 7I96 ENCODER 2 SETUP FOR OHMIC SENSING---
+setp hm2_7i96.0.encoder.02.scale -1
+setp hm2_7i96.0.encoder.02.counter-mode 1
+
+# --- Configure the component ---
+setp ohmicsense.thcad-0-volt-freq 199800
+setp ohmicsense.thcad-max-volt-freq 901800
+setp ohmicsense.thcad-divide         32
+setp ohmicsense.thcad-fullscale      5
+setp ohmicsense.volt-divider         4.9
+setp ohmicsense.ohmic-threshold      22
+setp ohmicsense.ohmic-low            18
+net ohmic-vel ohmicsense.velocity-in <= hm2_7i96.0.encoder.02.velocity
+
+# --- Replace Plasmac’s Ohmic sensing signal ---
+unlinkp db_ohmic.in
+net ohmic-true ohmicsense.ohmic-on => db_ohmic.in
+net plasmac:ohmic-enable    =>  ohmicsense.is-probing
+
+
+
+loadrt and2 count=3
+loadrt xor2 count=1
+loadrt siggen num_chan=1
+addf and2.0 servo-thread
+addf and2.1 servo-thread
+addf xor2.0 servo-thread
+addf siggen.0.update servo-thread
+
+setp siggen.0.frequency 2
+
+#Yellow Light
+net machine-is-on => and2.0.in0
+net plasmac:program-is-idle => and2.0.in1 
+net yellow-out <= and2.0.out
+net yellow-out => hm2_7i96.0.ssr.00.out-03
+
+#Green Light
+net plasmac:program-is-running => xor2.0.in0
+net plasmac:program-is-paused => and2.1.in1
+net flash <= siggen.0.clock => and2.1.in0
+net green-flash <= and2.1.out => xor2.0.in1
+net green-on <= xor2.0.out => hm2_7i96.0.ssr.00.out-04
+
+#Red Light
+net red-on <= halui.estop.is-activated  => hm2_7i96.0.ssr.00.out-02
+
+
+
