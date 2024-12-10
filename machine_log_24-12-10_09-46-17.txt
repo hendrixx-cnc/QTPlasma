@@ -1,0 +1,45 @@
+--- QtVCP Screen Started on: Tue, Dec 10 2024 05:45:53 AM ---
+--- QTPlasma - QtPlasmaC v2.10-008.053, powered by QtVCP and LinuxCNC ---
+05:45:54 Tool 0: torch
+05:45:59 GUI power on
+05:46:07 Machine homed
+05:48:04 Machine homed
+05:48:39 Machine homed
+05:51:24 Machine homed
+06:17:13 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+06:17:38 Cycle started - Torch enabled
+06:18:02 Machine idle
+06:58:46 Machine homed
+06:59:36 Machine homed
+07:00:32 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+07:01:07 Cycle started - Torch enabled
+07:01:31 Machine idle
+07:07:59 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+07:08:13 Cycle started - Torch enabled
+07:08:47 Cycle aborted
+07:08:47 Machine idle
+07:16:05 Machine homed
+07:16:25 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+07:16:35 Cycle started - Torch enabled
+07:17:12 Cycle aborted
+07:17:12 Machine idle
+07:21:27 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+07:21:33 Cycle started - Torch enabled
+07:21:40 Cycle aborted
+07:21:40 Machine idle
+07:22:01 Cycle started - Torch enabled
+07:24:43 Machine idle
+07:37:35 Program cleared
+08:13:59 Loaded: /home/tech/Desktop/batarang_0002.ngc
+08:15:04 Program cleared
+08:15:07 Loaded: /home/tech/Desktop/batarang_0001.ngc
+08:15:08 Loaded: /home/tech/Desktop/batarang_0001.ngc
+08:15:51 Reloaded: /home/tech/Desktop/batarang_0001.ngc
+08:15:51 Reloaded: /home/tech/Desktop/batarang_0001.ngc
+09:35:13 Program cleared
+09:35:17 Loaded: /home/tech/Desktop/batarang_0003.ngc
+09:36:56 Machine homed
+09:41:37 Unexpected realtime delay on task 0 with period 1000000
+This Message will only display once per session.
+Run the Latency Test and resolve before continuing.
+09:46:14 Program cleared

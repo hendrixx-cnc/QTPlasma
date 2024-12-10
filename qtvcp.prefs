@@ -16,11 +16,11 @@ MachineLogDialog_play_sound = False
 MachineLogDialog_sound_type = READY
 
 [BOOK_KEEPING]
-last_loaded_directory = /home/tech/Desktop
-RecentPath_0 = /home/tech/Desktop/inner ring .ngc
+last_loaded_directory = /home/tech/Downloads
+RecentPath_0 = /home/tech/Downloads/eo2z26o82.ngc
 style_QSS_Path = DEFAULT
-last_saved_directory = /home/tech/Desktop
-RecentSavedPath_0 = /home/tech/Desktop/inner ring .ngc
+last_saved_directory = /home/tech/Downloads
+RecentSavedPath_0 = /home/tech/Downloads/eo2z26o82.ngc
 
 [SCREEN_OPTIONS]
 overlay_play_sound = False
