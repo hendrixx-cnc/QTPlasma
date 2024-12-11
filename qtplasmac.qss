@@ -148,11 +148,11 @@ QPushButton, QToolButton {
 
 QPushButton:pressed, QToolButton:pressed {
     color: #000000;
-    background: #68c190 }
+    background: #3aadad }
 
 QPushButton:checked, QToolButton:checked {
     color: #000000;
-    background: #68c190 }
+    background: #3aadad }
 
 QPushButton:checked:pressed, QToolButton:checked:pressed {
     color: #ffaa7f;
@@ -391,7 +391,7 @@ QCheckBox::indicator {
     height: 26px }
 
 QCheckBox::indicator:pressed {
-    background: #68c190 }
+    background: #3aadad }
 
 QCheckBox::indicator:disabled {
 border-color: #000000 }
@@ -400,7 +400,7 @@ QCheckBox::indicator:disabled:checked {
 background: #000000 }
 
 QCheckBox::indicator:checked {
-    background: #68c190 }
+    background: #3aadad }
 
 QCheckBox::indicator:checked:pressed {
     background: #000000 }
@@ -438,7 +438,7 @@ QCheckBox::indicator:checked:pressed {
 #pmx485_enable::indicator:checked,
 #thc_auto::indicator:checked,
 #thc_enable::indicator:checked {
-    background: #68c190;
+    background: #3aadad;
     border-color: #ffaa7f }
 
 #torch_enable::indicator:!checked,
@@ -464,7 +464,7 @@ QCheckBox::indicator:checked:pressed {
 #pmx485_enable::indicator:pressed,
 #thc_auto::indicator:pressed,
 #thc_enable::indicator:pressed {
-    background: #68c190 }
+    background: #3aadad }
 
 #torch_enable::indicator:checked:pressed,
 #cornerlock_enable::indicator:checked:pressed,
@@ -771,7 +771,7 @@ QTabBar::tab {
 
 QTabBar::tab:selected {
     color: #000000;
-    background: #68c190 }
+    background: #3aadad }
 
 /****** STATUS BAR ************/
 QStatusBar {
@@ -794,7 +794,7 @@ QProgressBar::chunk {
 
 /****** LED ************/
 LED {
-    qproperty-color: #ffff00;
+    qproperty-color: #55ffff;
     qproperty-off_color: #000000;
     qproperty-border_color: #000000;
     qproperty-diameter: 20 }
