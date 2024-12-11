@@ -1,7 +1,7 @@
 [PLASMA_PARAMETERS]
 Arc Voltage Offset = 3671.875
 Arc Voltage Scale = 0.01944
-Setup Feed Rate = 30.0
+Setup Feed Rate = 25.0
 Arc Fail Timeout = 3.2
 Arc OK High = 200.0
 Arc OK Low = 10.0
@@ -17,7 +17,7 @@ Pid D Gain = 0.0
 Pid I Gain = 0.0
 Probe Feed Rate = 6.9
 Probe Start Height = 2.44
-Arc Restart Delay = 3.0
+Arc Restart Delay = 1.0
 Safe Height = 0.75
 Scribe Arming Delay = 0.0
 Scribe On Delay = 0.0
@@ -28,7 +28,7 @@ THC Delay = 0.5
 THC Sample Counts = 50
 THC Sample Threshold = 1.0
 THC Threshold = 1.0
-Offset Feed Rate = 432.0
+Offset Feed Rate = 32.0
 X Pierce Offset = 0.06
 Y Pierce Offset = 0.0
 
