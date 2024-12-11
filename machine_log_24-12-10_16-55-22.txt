@@ -1,9 +1,0 @@
---- QtVCP Screen Started on: Tue, Dec 10 2024 04:54:36 PM ---
---- QTPlasma - QtPlasmaC v2.10-008.053, powered by QtVCP and LinuxCNC ---
-16:54:37 Code Error:
-Invalid code for user button #16
-XBACK LASH: "x.005"
-16:54:37 Code Error:
-Invalid code for user button #17
-YBACK LASH: "y.005"
-16:54:38 Tool 0: torch

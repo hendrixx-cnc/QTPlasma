@@ -1,7 +1,7 @@
 [PLASMA_PARAMETERS]
 Arc Voltage Offset = 3671.875
 Arc Voltage Scale = 0.01944
-Setup Feed Rate = 30.0
+Setup Feed Rate = 24.99999999999993
 Arc Fail Timeout = 3.2
 Arc OK High = 200.0
 Arc OK Low = 10.0
@@ -41,8 +41,8 @@ Hide run = 0
 Hide pause = 0
 Hide abort = 0
 Autorepeat all = False
-Use keyboard shortcuts = True
-Use soft keyboard = False
+Use keyboard shortcuts = False
+Use soft keyboard = True
 Show materials = True
 Run from line = True
 Tool tips = False

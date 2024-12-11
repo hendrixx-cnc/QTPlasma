@@ -1,0 +1,6 @@
+--- QtVCP Screen Started on: Tue, Dec 10 2024 10:48:51 PM ---
+--- QTPlasma - QtPlasmaC v2.10-008.053, powered by QtVCP and LinuxCNC ---
+22:49:03 Consumable change completed
+22:49:03 Laser Error:
+Laser is outside the machine boundary
+22:49:03 GUI power on

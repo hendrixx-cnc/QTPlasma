@@ -49,9 +49,20 @@ net green-flash <= and2.1.out => or2.0.in1
 net green-on <= or2.0.out => hm2_7i96.0.ssr.00.out-04
 
 #Red Light
-net plasmac:program-is-running => or2.1.in0
-net jogging motion.jog-is-active => or2.1.in1
-net jog-red or2.1.out => hm2_7i96.0.ssr.00.out-02
+net plasmac:program-is-running => hm2_7i96.0.ssr.00.out-02
 
 
 
+loadusr -W hal_input -KRAL Microsoft X-Box 360 pad
+
+net xboxb  qtplasmac.ext_torch_enable input.3.btn-b
+net xboxa qtplasmac.ext_laser_toggle input.3.btn-a
+net xboxx  qtplasmac.ext_pulse input.3.btn-x
+net xboxy qtplasmac.ext_consumables input.3.btn-y
+net xboxlbumper qtplasmac.ext_laser_touchoff   input.3.btn-tl
+net xboxrbumper qtplasmac.ext_frame_job input.3.btn-tr
+net xboxstart qtplasmac.ext_run input.3.btn-start
+net xboxselect qtplasmac.ext_abort input.3.btn-select
+net xboxmode qtplasmac.ext_power input.3.btn-mode
+net xboxrthumb  qtplasmac.ext_probe input.3.btn-thumbr
+net xboxlthumb qtplasmac.ext_touchoff input.3.btn-thumbl

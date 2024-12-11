@@ -1,13 +1,26 @@
 # Halshow settings
 # This file is generated automatically.
-wm geometry . 1333x580+187+218
+wm geometry . 1333x580+742+207
 placeFrames 0.3
 set ::ratio 0.3
 set ::old_w_leftf 160
 set ::watchlist {
-    pin+halui.machine.is-on
+    pin+qtplasmac.ext_run
+    pin+qtplasmac.ext_run_pause
+    pin+qtplasmac.ext_laser_toggle
+    pin+qtplasmac.ext_laser_touchoff
+    pin+qtplasmac.ext_touchoff
+    pin+qtplasmac.ext_torch_enable
+    pin+qtplasmac.ext_resume
+    pin+qtplasmac.ext_frame_job
+    pin+qtplasmac.ext_abort
+    pin+qtplasmac.ext_power
+    pin+qtplasmac.ext_pause
+    pin+qtplasmac.ext_pulse
+    pin+qtplasmac.ext_probe
+    pin+qtplasmac.ext_consumables
 }
-set ::workmode showhal
+set ::workmode watchhal
 set ::watchInterval 100
 set ::col1_width 100
 set ::ffmts 
