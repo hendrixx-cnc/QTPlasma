@@ -1,0 +1,5 @@
+--- QtVCP Screen Started on: Wed, Dec 11 2024 12:57:27 PM ---
+--- QTPlasma - QtPlasmaC v2.10-008.053, powered by QtVCP and LinuxCNC ---
+12:57:34 GUI power on
+12:57:41 Home switch active before start of latch move j=1
+12:57:50 Machine homed
