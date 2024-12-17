@@ -1,0 +1,53 @@
+--- QtVCP Screen Started on: Mon, Dec 16 2024 04:56:40 AM ---
+--- QTPlasma - QtPlasmaC v2.10-008.053, powered by QtVCP and LinuxCNC ---
+04:56:45 GUI power on
+04:57:11 Machine homed
+04:58:42 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+04:58:47 Cycle started - Torch disabled
+04:59:02 Cycle aborted
+04:59:02 Machine idle
+04:59:10 Cycle started - Torch enabled
+04:59:36 Machine idle
+07:46:12 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+07:46:17 Cycle started - Torch enabled
+07:46:41 Machine idle
+07:48:12 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+07:48:14 Cycle started - Torch enabled
+07:48:33 Machine idle
+07:49:18 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+07:49:20 Cycle started - Torch enabled
+07:49:36 Machine idle
+07:50:14 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+07:50:14 Cycle started - Torch enabled
+07:50:29 Machine idle
+07:56:23 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+07:56:46 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+07:56:53 Cycle started - Torch enabled
+07:57:08 Machine idle
+08:02:29 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+08:02:37 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+08:02:38 Cycle started - Torch enabled
+08:02:52 Machine idle
+11:53:42 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+12:03:28 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+12:03:53 Cycle started - Torch enabled
+12:04:33 Machine idle
+12:05:49 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+12:06:06 Cycle started - Torch enabled
+12:06:47 Machine idle
+12:10:15 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+12:10:22 Cycle started - Torch enabled
+12:11:22 Machine idle
+12:16:20 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+12:16:24 Cycle started - Torch enabled
+12:17:27 Machine idle
+12:21:01 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+12:21:02 Cycle started - Torch enabled
+12:21:30 Cycle aborted
+12:21:30 Machine idle
+12:22:44 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+12:22:48 Cycle started - Torch enabled
+12:24:16 Machine idle
+12:28:19 Reloaded: /tmp/qtplasmac/sent_shape.ngc
+12:28:21 Cycle started - Torch enabled
+12:29:57 Machine idle

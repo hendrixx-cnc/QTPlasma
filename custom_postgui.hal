@@ -22,7 +22,7 @@ unlinkp db_ohmic.in
 net ohmic-true ohmicsense.ohmic-on => db_ohmic.in
 net plasmac:ohmic-enable    =>  ohmicsense.is-probing
 
-
+# --- Light Tree Hal connects ---
 
 loadrt and2 count=3
 loadrt or2 count=2
@@ -32,14 +32,7 @@ addf and2.1 servo-thread
 addf or2.0 servo-thread
 addf or2.1 servo-thread
 addf siggen.0.update servo-thread
-
 setp siggen.0.frequency 2
-
-#Yellow Light
-net machine-is-enabled => and2.0.in0
-net plasmac:program-is-idle => and2.0.in1 
-net yellow-out <= and2.0.out
-net yellow-out => hm2_7i96.0.ssr.00.out-03
 
 #Green Light
 net machine-is-on  => or2.0.in0
@@ -48,10 +41,17 @@ net flash <= siggen.0.clock => and2.1.in0
 net green-flash <= and2.1.out => or2.0.in1
 net green-on <= or2.0.out => hm2_7i96.0.ssr.00.out-04
 
+#Yellow Light
+net machine-is-enabled => and2.0.in0
+net plasmac:program-is-idle => and2.0.in1 
+net yellow-out <= and2.0.out
+net yellow-out => hm2_7i96.0.ssr.00.out-03
+
 #Red Light
 net plasmac:program-is-running => hm2_7i96.0.ssr.00.out-02
 
 
+# --- XBOX HAl Connections ---
 
 loadusr -W hal_input -KRAL Microsoft X-Box 360 pad
 

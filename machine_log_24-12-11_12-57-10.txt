@@ -1,5 +1,0 @@
---- QtVCP Screen Started on: Wed, Dec 11 2024 12:49:59 PM ---
---- QTPlasma - QtPlasmaC v2.10-008.053, powered by QtVCP and LinuxCNC ---
-12:50:07 GUI power on
-12:50:21 Machine homed
-12:52:52 Unknown word where unary operation could be

@@ -298,7 +298,7 @@ net z-pos-fb     <= [HMOT](CARD0).stepgen.04.position-fb
 net z-pos-fb     => joint.3.motor-pos-fb
 net z-enable     <= joint.3.amp-enable-out
 net z-enable     => [HMOT](CARD0).stepgen.04.enable
-
+setp   hm2_7i96.0.stepgen.04.direction.invert_output   true
 # ---setup home / limit switch signals---
 
 net home-z     =>  joint.3.home-sw-in

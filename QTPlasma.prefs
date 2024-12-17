@@ -1,11 +1,11 @@
 [PLASMA_PARAMETERS]
 Arc Voltage Offset = 3671.875
 Arc Voltage Scale = 0.01944
-Setup Feed Rate = 24.99999999999993
+Setup Feed Rate = 120.0
 Arc Fail Timeout = 3.2
 Arc OK High = 200.0
 Arc OK Low = 10.0
-Arc Maximum Starts = 5
+Arc Maximum Starts = 3
 Velocity Anti Dive Threshold = 65.0
 Float Switch Travel = 0.06
 Height Per Volt = 0.006
@@ -15,9 +15,9 @@ Ohmic Probe Offset = 0.0
 Pid P Gain = 10.0
 Pid D Gain = 0.0
 Pid I Gain = 0.0
-Probe Feed Rate = 6.9
-Probe Start Height = 2.44
-Arc Restart Delay = 3.0
+Probe Feed Rate = 9.999999999999993
+Probe Start Height = 3.000000000000016
+Arc Restart Delay = 2.0
 Safe Height = 0.75
 Scribe Arming Delay = 0.0
 Scribe On Delay = 0.0
@@ -41,8 +41,8 @@ Hide run = 0
 Hide pause = 0
 Hide abort = 0
 Autorepeat all = False
-Use keyboard shortcuts = False
-Use soft keyboard = True
+Use keyboard shortcuts = True
+Use soft keyboard = False
 Show materials = True
 Run from line = True
 Tool tips = False
@@ -125,14 +125,14 @@ X axis = 0
 Y axis = 0
 
 [STATISTICS]
-Cut time = 7141.67
-Paused time = 49541.03
-Probe time = 9820.16
-Program run time = 72348.26
-Torch on time = 8755.73
-Rapid time = 3039.58
-Cut length = 14282.09
-Pierce count = 1097
+Cut time = 7392.47
+Paused time = 49547.62
+Probe time = 10231.59
+Program run time = 73515.58
+Torch on time = 9223.05
+Rapid time = 3220.24
+Cut length = 14703.47
+Pierce count = 1285
 
 [LASER_OFFSET]
 X axis = -0.8363
