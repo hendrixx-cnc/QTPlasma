@@ -15,8 +15,8 @@ Ohmic Probe Offset = 0.0
 Pid P Gain = 10.0
 Pid D Gain = 0.0
 Pid I Gain = 0.0
-Probe Feed Rate = 9.999999999999993
-Probe Start Height = 3.000000000000016
+Probe Feed Rate = 10.0
+Probe Start Height = 3.2499999999999947
 Arc Restart Delay = 2.0
 Safe Height = 0.75
 Scribe Arming Delay = 0.0
@@ -125,14 +125,14 @@ X axis = 0
 Y axis = 0
 
 [STATISTICS]
-Cut time = 7392.47
-Paused time = 49547.62
-Probe time = 10231.59
-Program run time = 73515.58
-Torch on time = 9223.05
-Rapid time = 3220.24
-Cut length = 14703.47
-Pierce count = 1285
+Cut time = 7645.97
+Paused time = 49992.3
+Probe time = 10333.68
+Program run time = 74490.49
+Torch on time = 9538.0
+Rapid time = 3267.39
+Cut length = 14785.47
+Pierce count = 1341
 
 [LASER_OFFSET]
 X axis = -0.8363

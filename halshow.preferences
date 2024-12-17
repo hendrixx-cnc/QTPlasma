@@ -1,27 +1,34 @@
 # Halshow settings
 # This file is generated automatically.
-wm geometry . 1333x580+317+135
+wm geometry . 1333x580+497+112
 placeFrames 0.3
 set ::ratio 0.3
 set ::old_w_leftf 160
 set ::watchlist {
-    pin+qtplasmac.ext_run
-    pin+qtplasmac.ext_run_pause
-    pin+qtplasmac.ext_laser_toggle
-    pin+qtplasmac.ext_laser_touchoff
-    pin+qtplasmac.ext_touchoff
-    pin+qtplasmac.ext_torch_enable
-    pin+qtplasmac.ext_resume
-    pin+qtplasmac.ext_frame_job
-    pin+qtplasmac.ext_abort
-    pin+qtplasmac.ext_power
-    pin+qtplasmac.ext_pause
-    pin+qtplasmac.ext_pulse
-    pin+qtplasmac.ext_probe
-    pin+qtplasmac.ext_consumables
-    sig+plasmac:arc-ok
+    pin+halui.axis.selected.increment
+    pin+halui.home-all
+    pin+halui.machine.is-on
+    pin+halui.program.is-running
+    pin+hm2_7i96.0.encoder.sample-frequency
+    pin+ini.3.backlash
+    pin+ini.2.backlash
+    pin+ini.1.backlash
+    pin+ini.0.backlash
+    pin+ini.u.max_acceleration
+    pin+joint.0.backlash-vel
+    pin+joint.0.backlash-filt
+    pin+joint.0.backlash-corr
+    pin+joint.0.acc-cmd
+    pin+joint.0.active
+    pin+joint.0.amp-fault-in
+    pin+joint.0.coarse-pos-cmd
+    pin+joint.0.f-error
+    pin+joint.0.f-error-lim
+    pin+joint.0.f-errored
+    pin+joint.0.faulted
+    pin+joint.0.homing
 }
-set ::workmode watchhal
+set ::workmode showhal
 set ::watchInterval 100
 set ::col1_width 100
 set ::ffmts 
